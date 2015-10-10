@@ -6,8 +6,8 @@ setup(
   description = 'Provides arbitrary precision FFTs using the mpmath package',
   author = 'David Stein',
   author_email = 'dbstein@math.ucdavis.edu',
-  url = 'https://github.com/peterldowns/mypackage', # use the URL to the github repo
-  download_url = 'https://github.com/peterldowns/mypackage/tarball/0.1', # I'll explain this in a second
+  url = 'https://github.com/dbstein/apfft', # use the URL to the github repo
+  download_url = 'https://github.com/dbstein/apfft/tarball/0.1', # I'll explain this in a second
   keywords = ['arbitrary precision', 'fft', 'fourier'], # arbitrary keywords
   classifiers = [],
 )
