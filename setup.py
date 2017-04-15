@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
   name = 'apfft',
-  packages = ['apfft'], # this must be the same as the name above
+  packages = ['apfft', 'apfft.tools'], # this must be the same as the name above
   version = '0.3',
   description = 'Provides arbitrary precision FFTs using the mpmath package',
   author = 'David Stein',
