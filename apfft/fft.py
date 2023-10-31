@@ -26,8 +26,8 @@ def fft(yg):
     M = apfft.tools.exp(A)
     X = M.dot(yg.reshape((N_min, -1)))
     while X.shape[0] < N:
-        X_even = X[:, :X.shape[1] / 2]
-        X_odd = X[:, X.shape[1] / 2:]
+        X_even = X[:, :X.shape[1] // 2]
+        X_odd = X[:, X.shape[1] // 2:]
         A = -mp.mpc(1j) * mp.pi * apfft.tools.arange(X.shape[0]) / mp.mpf(X.shape[0])
         factor = apfft.tools.exp(A)[:, None]
         X = np.vstack([X_even + factor * X_odd,
